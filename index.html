@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  > 
+    <div id="container">
+        <div id="calculator-background">
+          <div id="calculator-container">
+            <form id="myForm">
+                <input type="text" id="input-box" disabled>
+                <div id="buttons">
+                    <div>
+                        <input type="button" value="C" onclick="clearInput()" class="normal-button">
+                        <input type="button" value="+/-" onclick="getAbsolute()" class="normal-button">
+                        <input type="button" value="%" onclick="percentageNumber()" class="normal-button">
+                        <input type="button" value="/" onclick="division(this)" class="normal-button">
+                    </div>
+                    <div> 
+                        <input type="button" value="7" onclick="num7(this)"  class="normal-button">
+                        <input type="button" value="8" onclick="num8(this)"  class="normal-button">
+                        <input type="button" value="9" onclick="num9(this)"  class="normal-button">
+                        <input type="button" value="x" onclick="multiplication()" class="normal-button">
+                    </div>
+                    <div> 
+                        <input type="button" value="4" onclick="num4(this)"  class="normal-button">
+                        <input type="button" value="5" onclick="num5(this)"  class="normal-button">
+                        <input type="button" value="6" onclick="num6(this)"  class="normal-button">
+                        <input type="button" value="-" onclick="subtraction(this)" class="normal-button" >
+                    </div>
+                    <div> 
+                        <input type="button" value="1" onclick="num1(this)" class="normal-button">
+                        <input type="button" value="2" onclick="num2(this)" class="normal-button">
+                        <input type="button" value="3" onclick="num3(this)" class="normal-button">
+                        <input type="button" value="+" onclick="addition(this)" class="normal-button">
+                    </div>
+                    <div>
+                        <input type="button" value="0" onclick="num0(this)" class="xl-button">
+                        <input type="button" value="."   id="myDecimal" onclick="numberDecimal(this)"  class="normal-button">
+                        <input type="button" value="=" onclick="calculateInput()" class="normal-button">
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

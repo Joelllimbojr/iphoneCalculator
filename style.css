@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(114deg, rgba(2,0,36,1) 0%, rgba(240,240,240,1) 40%, rgba(0,212,255,1) 90%);
+}
+#container{  
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#calculator-background{ 
+     width: 375px;
+    height: 667px;
+    background-image: url("myScreen.png");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+     
+}
+#calculator-container{
+    top: 95px;
+    left: 75px;
+    /* width: 60.5%; */
+    width: 60.5%;
+    height: 72%; 
+    position: absolute;
+    padding: 2px;  
+    background: #000000; 
+    border-radius: 20px;
+    transition: 2s all;
+}
+#myForm input[type="text"]{
+    background: #000000; 
+    color: #fff;
+    width: 100%;
+    height: 130px;
+    text-align: right;
+    font-size: 30px;
+    border: none;
+    padding: 3px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+div#buttons{
+    display: flex; 
+    margin-top: 3px; 
+    flex-direction: column; 
+}
+div#buttons > div{ 
+    height: 69px;
+    padding: 3px;
+ }
+ div#buttons div:first-child > input,
+ div#buttons div:nth-child(2) > input,
+ div#buttons div:nth-child(3) > input,
+ div#buttons div:nth-child(4) > input,
+ div#buttons div:last-child  > input:nth-child(2),
+ div#buttons div:last-child > input:nth-child(3){
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     margin-top: 5px ;
+     border:none;
+     font-size: 20px;
+     background-color: rgba(255,255,255,0.3);
+     transition: 2s all;
+ }
+ div#buttons div:last-child > input:nth-child(1){
+    width: 100px;
+    height: 50px;
+    border-radius: 45%;
+    margin-top: 5px ;
+    border:none;
+    font-size: 20px;
+    transition: 2s all;
+}
+div#buttons div:first-child > input{
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000; 
+}
+div#buttons div > input{ 
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+div#buttons div:first-child > input:last-child,
+div#buttons div:nth-child(2) > input:last-child,
+div#buttons div:nth-child(3) > input:last-child,
+div#buttons div:nth-child(4) > input:last-child,
+div#buttons div:last-child > input:last-child
+{
+  background-color: rgb(210, 232, 9);
+  color: #fff;
+}
+@media screen and (max-width: 367px) {
+    #calculator-container{
+        left: 74px; 
+    }
+    div#buttons div:first-child > input,
+    div#buttons div:nth-child(2) > input,
+    div#buttons div:nth-child(3) > input,
+    div#buttons div:nth-child(4) > input,
+    div#buttons div:last-child  > input:nth-child(2),
+    div#buttons div:last-child > input:nth-child(3){
+     width: 48px;
+     
+    }
+    div#buttons div:last-child > input:nth-child(1){
+        width: 100px; ;
+        
+    }
+     
+  }
+  @media screen and (max-width: 355px) {
+    #calculator-container{
+        left: 71px; 
+    }
+    div#buttons div:first-child > input,
+    div#buttons div:nth-child(2) > input,
+    div#buttons div:nth-child(3) > input,
+    div#buttons div:nth-child(4) > input,
+    div#buttons div:last-child  > input:nth-child(2),
+    div#buttons div:last-child > input:nth-child(3){
+     width: 45px;
+    }
+    div#buttons div:last-child > input:nth-child(1){
+        width: 100px; ;  
+    }    
+  }
+  @media screen and (max-width: 355px) {
+     
+    div#buttons div:last-child > input:nth-child(1){
+        width: 95px; ;  
+    }    
+  }
